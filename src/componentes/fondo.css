@@ -1,0 +1,142 @@
+.container-fondo {
+    padding: 0px;
+    margin: 30px 220px;
+    border-radius: 50px;
+    background: none;
+}
+
+.cont-sign{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    transition: all 1s ease;
+    margin-bottom: 100px;
+}
+
+.container-form{
+    background-color: rgba(255, 255, 255, 0.387);
+    width: 50%;
+    padding: 10px 40px;
+}
+
+.fondo-imagen{
+    flex: 1; 
+}
+
+.fondo{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fondo-sign{
+    background-image: url('../imagenes/img-sign.webp');
+}
+
+
+.cont-login{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.fondo-imagen-login{
+    width: 60%;
+}
+
+.fondo-login{
+    background-image: url('../imagenes/img-login.webp');
+}
+
+.sign-hide{
+    opacity: 0;
+    transform: translateY(-600px);
+}
+
+.login-active{
+    transform: translateY(-570px);
+}
+
+
+.login-hide{
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+
+@media (max-width: 719px){
+    
+    .container-fondo{
+        margin: 50px 15px;
+    }
+
+    .container-form{
+        padding-left: 20px;
+    }
+
+    .cont-sign{
+        border-radius: 25px;
+        z-index: 2;
+    }
+   
+    .fondo-sign{
+        clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+        background-position: 5px 140px;
+        opacity: .8;
+        z-index: 1;
+    }
+
+    .cont-login{
+        border-radius: 25px;
+    }
+
+    .fondo-login{
+        clip-path: polygon(0 0, 0 35%, 100% 0);
+    }
+    
+}
+
+
+@media (min-width: 720px) and (max-width:1299px){
+    
+    .container-fondo{
+        margin: 50px 70px;
+    }
+
+    .fondo-login{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1919px){
+    .cont-sign{
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width: 1920px){
+    .container-fondo{
+        margin: 50px 400px;
+    }
+
+    .cont-sign{
+        margin-bottom: 150px;
+    }
+
+    .container-form{
+        width: 45%;
+    }
+    
+    .fondo{
+        background-position: center;
+    }
+}

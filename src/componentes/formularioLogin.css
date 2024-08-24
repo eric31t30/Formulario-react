@@ -1,0 +1,95 @@
+.cont-form-login{
+    align-items: center;
+}
+
+.h2-login{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.tittle-login{
+    color: rgb(12, 194, 194);
+}
+
+.cont-input-login{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.input-checkbox-login{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+    left: -14px;
+    margin-bottom: 40px;
+}
+
+.label-checkbox-login{
+    color: rgba(0, 0, 0, 1);
+}
+
+.button-login{
+    margin-bottom: 35px;
+}
+
+img{
+    position: relative;
+}
+
+.cont-social{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social{
+    background: none;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: all .5s ease;
+    width: 32px;
+    height: 32px;
+}
+
+.social:hover{
+    transform: scale(1.2);
+}
+
+.registrate{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.registrate-deco{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registrate-deco:hover{
+    border-bottom: 2px solid black;
+}
+
+
+@media (max-width: 719px){
+    
+    .cont-form-login{
+        align-items: center;
+        position: relative;
+        left: -30px;
+    }
+
+    .h2-login{
+        position: relative;
+        left: 40px;
+    }
+
+    .registrate{
+        margin-bottom: 25px;
+    }
+}

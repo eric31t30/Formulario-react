@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/hero-4');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.239);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(192, 200, 201);
+    border-radius: 50px;
+    transition: all 1s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(35, 35, 35);
+}
+
+.cont{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.cont-author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.author{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Hero', sans-serif;
+}
+
+.author:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.github-icon{
+    margin-left: 5px;
+}
+
+
+@media (max-width: 719px){
+
+    .cont-author{
+        bottom: -30px;
+    }
+}
+
+@media (min-width: 720px) and (max-width:1299px){
+    
+    .cont-author{
+        bottom: -30px;
+    }
+
+    .author{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .author{
+        font-size: 25px;
+    }
+}
